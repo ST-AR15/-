@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ch-ZN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三翼</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/produce-page.css">
+</head>
+<body>
+    <header>
+        <div class="header-icon">
+            <img src="img/img1.jpg" alt="三翼工作室">
+        </div>
+        <div class="header-info">
+            <ul class="header-info-list">
+                <li class="header-info-item">首页</li>
+                <li class="header-info-item">产品介绍</li>
+                <li class="header-info-item">工作室架构</li>
+                <li class="header-info-item">加入我们</li>
+            </ul>
+        </div>
+    </header>
+    <main id="main">
+        <div class="main-container">
+            <div class="main-contain">
+                <div class="produce-progress">
+                    <div class="produce-progress-contain">
+                        <div class="progress-item active-progress" id="progress1">
+                            <div class="progress-circle" id="circle1"></div>
+                            <div class="progress-detail" onclick="move(1)">
+                                拱拱APP
+                            </div>
+                        </div>
+                        <div class="progress-item" id="progress2">
+                            <div class="progress-circle" id="circle2"></div>
+                            <div class="progress-detail" onclick="move(2)">
+                                三翼校园网
+                            </div>
+                        </div>
+                        <div class="progress-item" id="progress3">
+                            <div class="progress-circle" id="circle3"></div>
+                            <div class="progress-detail" onclick="move(3)">
+                                湘大二手街
+                            </div>
+                        </div>
+                        <div class="progress-item" id="progress4">
+                            <div class="progress-circle" id="circle4"></div>
+                            <div class="progress-detail" onclick="move(4)">
+                                湘大文库
+                            </div>
+                        </div>
+                        <div class="progress-item" id="progress5">
+                            <div class="progress-circle" id="circle5"></div>
+                            <div class="progress-detail" onclick="move(5)">
+                                湘大查水表
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="produce-container" id="produce-container">
+                    <!-- 拱拱 -->
+                    <div class="produce-item" id="item1">
+                        <div class="produce-item-container">
+                            <div class="produce-detail">
+                                <div class="produce-header">
+                                    <div class="produce-header-container">
+                                        <div class="produce-icon">
+                                            <img src="img/img2.jpg" alt="拱拱">
+                                        </div>
+                                        <div class="produce-title">
+                                            <div class="produce-title-main">
+                                                拱拱
+                                            </div>
+                                            <div class="produce-title-ex">
+                                                让湘大如此简单
+                                            </div>
+                                            <div class="produce-title-web">
+                                                <a href="https://g.sky31.com" target="_blank">g.sky31.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="produce-main">
+                                    <div class="produce-main-container">
+                                        <p>三翼推出的一款综合查询功能性app</p>
+                                        <p>2016年11月份上线</p>
+                                        <p>目前设有查课表、空教室、倒计时、消费记录查询、图书</p>
+                                        <p>续借查询、校园向导、三翼各产品入口等功能</p>
+                                    </div>
+                                </div>
+                                <div class="produce-footer">
+                                    <div class="produce-footer-container">
+                                        <button><a href="https://g.sky31.com" target="_blank">下载拱拱</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="produce-image">
+                                <div class="produce-image-container">
+                                    <img src="img/img1.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 三翼校园 -->
+                    <div class="produce-item" id="item2">
+                        <div class="produce-item-container">
+                            <div class="produce-detail">
+                                <div class="produce-header">
+                                    <div class="produce-header-container">
+                                        <div class="produce-icon">
+                                            <img src="img/img1.jpg">
+                                        </div>
+                                        <div class="produce-title">
+                                            <div class="produce-title-main">
+                                                三翼校园网
+                                            </div>
+                                            <div class="produce-title-web">
+                                                <a href="https://www.sky31.com" target="_blank">www.sky31.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="produce-main">
+                                    <div class="produce-main-container">
+                                        <p>与2004年3月正式上线</p>
+                                        <p>学生门户网站</p>
+                                        <p>三翼校园网现设有新闻、资讯、活动日历、通知通告、</p>
+                                        <p>快速导航、人物专访、专题页面、三翼通讯社、湘大</p>
+                                        <p>视频窗、翼产品共十个模块</p>
+                                    </div>
+                                </div>
+                                <div class="produce-footer">
+                                    <div class="produce-footer-container">
+                                        <button><a href="https://www.sky31.com" target="_blank">打开三翼校园</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="produce-image">
+                                <div class="produce-image-container">
+                                    <img src="img/img1.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 湘大二手街 -->
+                    <div class="produce-item" id="item3">
+                        <div class="produce-item-container">
+                            <div class="produce-detail">
+                                <div class="produce-header">
+                                    <div class="produce-header-container">
+                                        <div class="produce-icon">
+                                            <img src="img/img1.jpg">
+                                        </div>
+                                        <div class="produce-title">
+                                            <div class="produce-title-main">
+                                                湘大二手街
+                                            </div>
+                                            <div class="produce-title-ex">
+                                                湘大人自己的二手街
+                                            </div>
+                                            <div class="produce-title-web">
+                                                <a href="https://buy.sky31.com" target="_blank">buy.sky31.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="produce-main">
+                                    <div class="produce-main-container">
+                                        <p>针对湘大全体师生的平台型产品</p>
+                                        <p>提供二手商品和服务。</p>
+                                        <p>其有登录、注册、商品搜索、商品发布、个人中心等功能</p>
+                                        <p>便宜实惠、方便快捷</p>
+                                    </div>
+                                </div>
+                                <div class="produce-footer">
+                                    <div class="produce-footer-container">
+                                        <button><a href="https://buy.sky31.com" target="_blank">打开湘大二手街</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="produce-image">
+                                <div class="produce-image-container">
+                                    <img src="img/img1.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 湘大文库 -->
+                    <div class="produce-item" id="item4">
+                        <div class="produce-item-container">
+                            <div class="produce-detail">
+                                <div class="produce-header">
+                                    <div class="produce-header-container">
+                                        <div class="produce-icon">
+                                            <img src="img/img1.jpg">
+                                        </div>
+                                        <div class="produce-title">
+                                            <div class="produce-title-main">
+                                                湘大文库
+                                            </div>
+                                            <div class="produce-title-web">
+                                                <a href="https://doc.sky31.com" target="_blank">doc.sky31.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="produce-main">
+                                    <div class="produce-main-container">
+                                        <p>针对湘潭大学在校大学生的综合性</p>
+                                        <p>学科资料库</p>
+                                        <p>用户可上传或下载各个学科的PPT课件、考试试卷、</p>
+                                        <p>课后习题和考试重点等</p>
+                                    </div>
+                                </div>
+                                <div class="produce-footer">
+                                    <div class="produce-footer-container">
+                                        <button><a href="https://doc.sky31.com" target="_blank">打开湘大文库</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="produce-image">
+                                <div class="produce-image-container">
+                                    <img src="img/img1.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 湘大查水表 -->
+                    <div class="produce-item" id="item5">
+                        <div class="produce-item-container">
+                            <div class="produce-detail">
+                                <div class="produce-header">
+                                    <div class="produce-header-container">
+                                        <div class="produce-icon">
+                                            <img src="img/img2.jpg">
+                                        </div>
+                                        <div class="produce-title">
+                                            <div class="produce-title-main">
+                                                湘大查水表
+                                            </div>
+                                            <div class="produce-title-ex">
+                                                湘大最强查询平台
+                                            </div>
+                                            <div class="produce-title-web">
+                                                <a href="http://cha.sky31.com" target="_blank">cha.sky31.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="produce-main">
+                                    <div class="produce-main-container">
+                                        <p>综合性查询的功能性产品</p>
+                                        <p>目前开放的功能有：查水表、查同学、查绩点排名、一卡通、</p>
+                                        <p>图书续借、修课进度查询、考试安排查询、通识课作业查询</p>
+                                    </div>
+                                </div>
+                                <div class="produce-footer">
+                                    <div class="produce-footer-container">
+                                        <button><a href="https://cha.sky31.com" target="_blank">打开湘大查水表</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="produce-image">
+                                <div class="produce-image-container">
+                                    <img src="img/img1.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+    <script src="js/stepMove.js"></script>
+    <script src="js/produce-page.js"></script>
+</body>
+</html>

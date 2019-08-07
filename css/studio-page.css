@@ -1,0 +1,349 @@
+main {
+    display: flex;
+}
+.main-container {
+    width: 100%;
+    height: 76.39%;
+    position: relative;
+    top: 11.8%;
+    /* overflow: hidden; */
+}
+.main-contain {
+    width: 100%;
+    height: 100%;
+}
+/* 菜单 */
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: #0F1932;
+    transition: all 1s;
+}
+.active-menu-finally {
+    background-color: transparent;
+    /* z-index: -1; */
+}
+.menu-container {
+    width: 82%;
+    height: 100%;
+    position: relative;
+    left: 9%;
+}
+/* 返回的icon */
+.menu-back {
+    width: 11.91vmin;
+    height: 11.91vmin;
+    border-radius: 50%;
+    background-image: url('../img/img2.jpg');
+    /* 反正是一张方形图片 */
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+}
+.active-menu .menu-back {
+    opacity: 0.4;
+    cursor: pointer;
+}
+.active-menu .menu-back:hover{
+    transform: scale(1.2);
+    opacity: 1 !important;
+}
+/* 三个icon和三个card */
+/* .menu-icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.menu-icon-container {
+    width: 27.92%;
+    height: 30%;
+    background-color: aqua;
+} */
+.menu-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+}
+.active-menu-finally .menu-card {
+    width: 42vmin;
+    left: 14vmin;
+    height: 11.9vmin;
+}
+.menu-card-container {
+    width: 27.92%;
+    /* height: 63.64%; */
+    height: 67.64%;
+    position: relative;
+    bottom: 11.36%;
+    /* 这样上面就剩下30% */
+    transform-origin: right;
+    transition: all 1s;
+}
+.active-menu-finally .menu-card-container {
+    width: 12vmin;
+    height: 100%;
+    bottom: 0;
+}
+.menu-card-contain {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: right top;
+    transition: transform 1s;
+    /* background-image: url(../img/img3.jpg); */
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.active-menu .menu-card-contain {
+    transform: scale(0);
+}
+.menu-card-inner {
+    width: 40.63%;
+    height: 58.97%;
+    position: absolute;
+    top: 20.52%;
+    left: 29.68%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+.menu-card-inner > p{
+    cursor: pointer;
+    opacity: 0.4;
+    transition: all 0.5s;
+}
+.menu-card-inner > p:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+/* .menu-card-inner > p:before {
+    content: '';
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1vmin solid #FFFFFF;
+    border-radius: 50%;
+} */
+.menu-icon {
+    width: 15vmin;
+    height: 15vmin;
+    background-image: url('../img/img2.jpg');
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    right: -5.5vmin;
+    top: -5.5vmin;
+    /* right: 0;
+    top: 0; */
+    z-index: 20;
+    transition: all 1s;
+}
+.active-card .menu-icon {
+    transform: scale(1.2);
+    opacity: 1 !important;
+}
+.active-menu .menu-card-container:hover > .menu-icon{
+    transform: scale(1.2);
+    opacity: 1 !important;
+}
+.active-menu .menu-icon {
+    cursor: pointer;
+}
+.active-card .menu-icon {
+    cursor: default;
+}
+.active-menu-finally .menu-icon {
+    width: 11.91vmin;
+    height: 11.91vmin;
+    opacity: 0.4;
+    top: 0;
+    right: 0;
+}
+/* 工作室介绍 */
+.studio {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.studio-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.studio-container > div {
+    height: 100%;
+}
+.active-menu + .studio .prv {
+    z-index: 999;
+}
+.active-menu + .studio .next {
+    z-index: 999;
+}
+.prv {
+    width: 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prv > div {
+    width: 40%;
+    height: 20%;
+    background-image: url('../img/img3.jpg');
+    background-position: center;
+    background-size: auto 100%;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.prv > div:hover {
+    transform: scale(1.1,1.1);
+}
+.next {
+    width: 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.next > div {
+    width: 40%;
+    height: 20%;
+    background-image: url('../img/img3.jpg');
+    background-position: center;
+    background-size: auto 100%;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.next > div:hover {
+    transform: scale(1.1,1.1);
+}
+.studio-introduce {
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+/* 工作室介绍主体来啦！ */
+.studio-introduce > div {
+    width: 100%;
+}
+/* 头部 */
+.studio-header {
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 2.5em;
+    /* align-self: flex-end; */
+}
+/* 中间 */
+.studio-main-container {
+    height: 82%;
+    overflow: hidden;
+}
+.studio-main-contain {
+    height: 100%;
+    display: flex;
+    transition: transform 1s;
+}
+.studio-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    opacity: 0;
+    /* transition: opacity 2s cubic-bezier(0, 0.96, 1, 1); */
+    transition: opacity 1.5s;
+}
+.studio-main > div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.studio-img-container {
+    width: 63%;
+}
+.studio-img-container > img {
+    width: 100%;
+}
+.studio-detail-container {
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.studio-detail {
+    width: 90%;
+    height: 90%;
+    background-color: #1B2640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.studio-detail-inner {
+    width: 80%;
+    height: 60%;
+}
+.studio-detail-title {
+    width: 100%;
+    margin-bottom: 10%;
+    font-size: 2.5em;
+}
+.studio-detail-inner > p {
+    margin: 5% 0;
+}
+/* 尾巴 */
+.studio-footer {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-circle {
+    width: 2vh;
+    height: 2vh;
+    border-radius: 50%;
+    border: 1vh solid #1B2640;
+    box-sizing: border-box;
+    margin: 0 0.5vh;
+    transition: all 0.3s;
+}
+.active-circle {
+    width: 2.5vh;
+    height: 2.5vh;
+    border: 0.5vh solid #1B2640;
+}
+.unuse-circle {
+    display: none;
+}

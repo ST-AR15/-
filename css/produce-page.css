@@ -1,0 +1,279 @@
+.main-container {
+    width: 100%;
+    height: 100%;
+}
+.main-contain {
+    width: 100%;
+    height: 76.39%;
+    position: relative;
+    top: 11.8%;
+    display: flex;
+    overflow: hidden;
+}
+.main-contain > div {
+    height: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    /* overflow: hidden; */
+}
+.produce-progress {
+    width: 27.97%;
+}
+/* 进度条 */
+
+/* 产品 */
+.produce-container {
+    width: 72%;
+    /* overflow: hidden; */
+    transition: transform 1s;
+}
+.produce-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.produce-item-container {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.produce-item-container > div {
+    width: 45%;
+    height: 100%;
+}
+/* 顶部的标题 */
+.produce-header {
+    width: 100%;
+    height: 20%;
+}
+.produce-header-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.produce-header-container > div {
+    height: 100%;
+    display: flex;
+}
+/* .produce-icon {
+    width: 50%;
+    display: inline-block;
+    max-width: 60%;
+} */
+.produce-item:nth-child(1) .produce-icon {
+    max-width: 30%;
+}
+.produce-item:nth-child(5) .produce-icon {
+    max-width: 30%;
+}
+.produce-item:nth-child(2) .produce-icon {
+    max-width: 50%;
+}
+.produce-item:nth-child(3) .produce-icon {
+    max-width: 50%;
+}
+.produce-item:nth-child(4) .produce-icon {
+    max-width: 50%;
+}
+.produce-icon > img {
+    height: 100%;
+    width: auto;
+}
+.produce-title {
+    position: relative;
+    left: 5%;
+    flex-direction: column;
+    justify-content: flex-start;
+    white-space: nowrap;
+    transform: translateY(-15%);
+}
+.produce-title > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.produce-title-main {
+    height: 80%;
+    font-size: 4em;
+}
+.produce-title-web {
+    height: 20%;
+    font-size: 0.2em;
+}
+.produce-title-ex {
+    height: 40%;
+    font-size: 1.4em;
+}
+/* 五个网址颜色不同 */
+.produce-item:nth-child(1) .produce-title-web > a {
+    color: #F897AA;
+}
+.produce-item:nth-child(2) .produce-title-web > a {
+    color: #FD694F;
+}
+.produce-item:nth-child(3) .produce-title-web > a {
+    color: #F88F55;
+}
+.produce-item:nth-child(4) .produce-title-web > a {
+    color: #18BC9C;
+}
+.produce-item:nth-child(5) .produce-title-web > a {
+    color: #FB6B6B;
+}
+.produce-title-web > a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    transition: transform 0.4s;
+}
+.produce-title-web > a:hover {
+    cursor: pointer;
+    transform: scale(1.1,1.1);
+
+}
+/* 中间的内容 */
+.produce-main {
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+.produce-main-container {
+    width: 100%;
+}
+.produce-main-container > p {
+    margin: 5% 0;
+}
+/* 下面的内容 */
+.produce-footer button {
+    background-color: #6166BA;
+    color: #FFFFFF;
+    font-size: 2em;
+    border: 0;
+    border-radius: 10px;
+    padding: 4% 8%;
+    transition: transform 0.4s;
+}
+.produce-footer button > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.produce-footer button:hover {
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+}
+/* 右边的图片 */
+.produce-image-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.produce-image-container > img {
+    width: 100%;
+}
+/* 产品出现的特效 */
+@keyframes item-appear {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    40% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.active-item  .produce-header-container {
+    opacity: 0;
+    animation: item-appear 2s;
+    animation-fill-mode: forwards;
+}
+.active-item  .produce-main {
+    opacity: 0;
+    animation: item-appear 2s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+.active-item  .produce-footer {
+    opacity: 0;
+    animation: item-appear 2s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+.active-item  .produce-image {
+    opacity: 0;
+    animation: item-appear 2s;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+}
+/* 进度条 */
+.produce-progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.produce-progress-contain {
+    width: 3px;
+    height: 100%;
+    background-color: #303950;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.progress-item {
+    width: 7vw;
+    height: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    left: -1px;
+    /* 这个left是线宽度减去圆直径的差除以2 */
+    white-space: nowrap;
+}
+.progress-circle {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 2.5px solid #FFFFFF;
+    background-color: #0F1932;
+    transition: all 0.6s;
+}
+.progress-detail {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    border-radius: 1000px;
+    color: #474C5A;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+.active-progress > .progress-circle {
+    width: 25px;
+    height: 25px;
+    transform: translateX(-10px);
+}
+.active-progress > .progress-detail {
+    background-color: #1B2640;
+    font-weight: bold;
+    color: #FFFFFF;     
+    justify-content: center;
+}

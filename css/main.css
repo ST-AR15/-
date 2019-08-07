@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-y: hidden;
+    overflow-x: auto; 
+    background-color: #0F1932;
+    color: #FFFFFF;
+    min-width: 1400px;
+    max-width: 1920px;
+}
+.container {
+    transition: transform 1s;
+}
+/* 与头部有关 */
+header {
+    width: 100%;
+    height: 7.43vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(13,21,43, 0.5);
+    
+}
+.header-icon {
+    width: 10vw;
+    position: absolute;
+    left: 15em;
+}
+.main .header-icon {
+    display: none;
+}
+.header-icon img {
+    width: 100%;
+}
+.header-info {
+    position: absolute;
+    right: 15em;
+}
+.header-info-list {
+    list-style: none;
+}
+.header-info-item {
+    display: inline-block;
+    margin: 1.25em 3.25em;
+}
+/* 每个section */
+.section {
+    width: 100%;
+    position: relative;
+}

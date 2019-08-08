@@ -265,6 +265,10 @@ for(let i=0;i<=2;i++) {
 // 点击返回
 getDom('back').onclick = function() {
     if(getDom('menu').className !== "menu") {
+        // 取消active-card
+        document.getElementsByClassName('menu-card-container')[0].className = "menu-card-container";
+        document.getElementsByClassName('menu-card-container')[1].className = "menu-card-container";
+        document.getElementsByClassName('menu-card-container')[2].className = "menu-card-container";
         console.log("返回");
         getDom('menu').className = "menu active-menu";
         setTimeout(() => {

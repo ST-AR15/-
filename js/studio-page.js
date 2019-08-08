@@ -237,10 +237,13 @@ function openPage(pageNum) {
     cardContainer[2].className = "menu-card-container";
     if(pageNum <= 5) {
         cardContainer[0].className = "menu-card-container active-card";
+        getDom('studio-header').innerText = "产品发展中心";
     } else if(pageNum <= 7){
         cardContainer[1].className = "menu-card-container active-card";
+        getDom('studio-header').innerText = "行政管理中心";
     } else {
         cardContainer[2].className = "menu-card-container active-card";
+        getDom('studio-header').innerText = "传媒发展中心";
     }
 }
 // 点击menu-icon
